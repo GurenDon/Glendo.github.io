@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <title>Draggable Slider Carousel</title>
+    <link rel="stylesheet" href="Scrolling Swiping.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <script src="Scrolling Swiping.js" defer></script>
+    <button onclick="topFunction()" id="ScrollTopBtn">BottomF</button>
+    <nav>
+        <p>Legend Swim School</p>
+        <ul>
+            <li><a href="Scrolling Swiping.html">Home</a></li>
+            <li><a href="#">Our Styles</a>
+                <ul>
+                    <li><a href="Freestyle.html">Freestyle</a></li>
+                    <li><a href="#">Backstroke</a></li>
+                    <li><a href="#">Breaststroke</a></li>
+                </ul>
+            </li>
+            <li><a href='Swimming Coaches.html'>Coaches</a></li>
+            <li><a href="How to Swim.html">How to Swim</a></li>
+            <li><a href="TimeWorldClock.html">Timer Clock</a></li>
+            <li><a href="Socials2.html">Socials</a></li>
+            <li><a href='Login.html'>Login</a></li>
+        </ul>
+    </nav>
+    <style>
+        .parallax {
+          background-image: url("https://www.heritage.org/sites/default/files/styles/commentary_header_image_768_tablet_656x342/public/images/2021-12/GettyImages-459214425.jpg?h=b1a91ebe&itok=uCYBmsPi");
+        
+          min-height: 500px; 
+        
+          background-attachment: fixed;
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: cover;
+        }
+
+        .whiteword {
+            color: aliceblue;
+        }
+    </style>
+    <div class="parallax"></div>
+    <div class="Darren">
+        <br><h1 class="whiteword">Do you want to swim like</h1>
+        <br>
+        <img src="https://th.bing.com/th/id/R.021bc51900b3bb6768693ebea81983a8?rik=pJc876M3Y1ginA&riu=http%3a%2f%2f2.bp.blogspot.com%2f-IBs3KHXNfTg%2fUBzAE5on_VI%2fAAAAAAAADas%2fTCZnQAV9Qvg%2fs1600%2fMichael%2bPhelps%2b2012%2bLondon%2bolympics_4.jpg&ehk=FPF44xhvFXXR0fHulcPXDSBHt9VI8IpyuSB9wLkqsgA%3d&risl=&pid=ImgRaw&r=0" alt="Micheal Phelps" class="center">
+        <br><br>
+        <h1 class="Bugat">Check Out What Our Learners Can Do!</h1><br>
+    </div>
+</head>
+<body>
+    <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <div class="carousel">
+            <img src="img-1.jpg" alt="img" draggable="false">
+            <img src="img-2.jpg" alt="img" draggable="false">
+            <img src="img-3.jpg" alt="img" draggable="false">
+            <img src="img-4.jpg" alt="img" draggable="false">
+            <img src="img-5.jpg" alt="img" draggable="false">
+            <img src="img-7.jpg" alt="img" draggable="false">
+            <img src="C:\.vscode\Swimming\My Website\img-6.jpg" alt="img" draggable="false">
+            <img src="C:\.vscode\Swimming\My Website\img-10.jpg" alt="img" draggable="false">
+            <img src="C:\.vscode\Swimming\My Website\img-8.jpg" alt="img" draggable="false">
+            <img src="C:\.vscode\Swimming\My Website\img-9.jpg" alt="img" draggable="false">
+        </div>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+    </div>
+    <br>
+    <table border="1" class="table">
+         <tr>
+            <th>Stroke</th>
+            <th>Difficulty</th>
+            <th>Time needed to Master</th>
+        </tr>
+        <tr>
+            <td>Freestyle</td>
+            <td>Easy</td>
+            <td>2 Months</td>
+        </tr>
+        <tr>
+            <td>Breast Stroke</td>
+            <td>Medium</td>
+            <td>3 Months</td>
+        </tr>
+        <tr>
+            <td>Back Stroke</td>
+            <td>Medium</td>
+            <td>3 Months</td>
+        </tr>
+    </table>
+        <br>
+        <br>
+</body>
+</html>

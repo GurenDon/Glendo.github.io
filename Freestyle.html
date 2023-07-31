@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Freestyle</title>
+</head>
+<body>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            border-radius: 8px;
+            background-color: aquamarine;
+            border-color: aqua;
+            padding: 5px 10px;
+        }
+        div.a {
+            text-align: center;
+            background-color: whitesmoke;
+        }
+
+        body {
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+    <br><br><br><br><br>
+    <div class="a" type="text-align">
+        <br><h1>Wanna Learn To Swim Freestyle?</h1><br>
+        <h2>Watch This Video!</h2><br>
+        <div style="text-align:center"> 
+            <!--<button onclick="playPause()">Play/Pause</button>--> 
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button>
+            <br><br>
+            <iframe id="video" width="600" height="340" src="https://www.youtube.com/embed/ZdKBXAoxoDE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script>
+        var myVideo = document.getElementById("video"); 
+        function makeBig() { 
+                 myVideo.width = 750; 
+                 myVideo.height = 400;
+            } 
+          
+            function makeSmall() { 
+                 myVideo.width = 320; 
+                 myVideo.height = 200;
+            } 
+          
+            function makeNormal() { 
+                myVideo.width = 600; 
+                myVideo.height = 340;
+            } 
+
+            var player1 = document.getElementById('my-video');
+    </script>
+</body>
+</html>

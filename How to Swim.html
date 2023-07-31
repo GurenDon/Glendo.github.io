@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        hr.new1 {
+            border: 10px aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <p>Legend Swim School</p>
+            <ul>
+                <li><a href="Scrolling Swiping.html">Home</a></li>
+                <li><a href="#">Our Styles</a>
+                <ul>
+                    <li><a href="Freestyle.html">Freestyle</a></li>
+                    <li><a href="#">Backstroke</a></li>
+                    <li><a href="#">Breaststroke</a></li>
+                </ul>
+                </li>
+                <li><a href='Swimming Coaches.html'>Coaches</a></li>
+                <li><a href="How To Swim.html">How to Swim</a></li>
+                <li><a href="TimeWorldClock.html">Time</a></li>
+                <li><a href="Socials2.html">Socials</a></li>
+                <li><a href='Login.html'>Login</a></li>
+            </ul>
+    </nav>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        button {
+            border-radius: 8px;
+            background-color: aquamarine;
+            border-color: aqua;
+            padding: 5px 10px;
+        }
+        div.a {
+            text-align: center;
+            background-color: whitesmoke;
+        }
+        nav {
+            width: 100%;
+            height: 60px;
+            background-color: #fff;
+        }
+
+        nav p {
+            font-family: arial;
+            color: #222;
+            font-size: 24px;
+            line-height: 55px;
+            float: left;
+            padding: 0px 20px;
+        }
+        nav ul {
+            float: left;
+        }
+
+        nav ul li {
+            float: left;
+            list-style: none;
+            position: relative;
+        }
+
+        nav ul li a {
+            display: block;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #222;
+            font-size: 14px;
+            padding: 22px 14px;
+            text-decoration: none;   
+        }
+
+        nav ul li ul {
+            display: none;
+            position: absolute; 
+            background-color: #fff;
+            padding: 10px; 
+            border-radius: 0px 0px 4px 4px;
+        }
+
+        nav ul li:hover ul {
+            display: block;
+        }
+
+        nav ul li ul li {
+            width: 180px;
+            border-radius: 4px;
+        }
+
+        nav ul li ul li a {
+            padding: 8px 14px;
+        }
+
+        nav ul li ul li a:hover {
+            background-color: rgb(97, 237, 237);
+        }   
+
+    </style>
+
+    <div class="a" type="text-align">
+        <br><br><h1>Wanna Learn How To Swim?</h1><br><br>
+        <h2>Watch This Video!</h2><br><br>
+        <div style="text-align:center"> 
+            <!--<button onclick="playPause()">Play/Pause</button>--> 
+            <button onclick="makeBig()">Big</button>
+            <button onclick="makeSmall()">Small</button>
+            <button onclick="makeNormal()">Normal</button>
+            <br><br>
+            <iframe id="video1" width="600" height="340" src="https://www.youtube.com/embed/8gVvGAWJGps" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            <hr class="new1">
+
+          <script> 
+            var myVideo = document.getElementById("video1"); 
+
+            //jQuery("myVideo").ready(function($) {
+                 //$('myVideo').click(function() {
+                     //this.paused ? this.play() : this.pause();
+                    //});
+                //});
+          
+            //function playPause() { 
+            //var y = 1
+            //if (y==1){
+                //myVideo.play();y-1}
+            //if(y==0){myVideo.pause();y++}
+             //} 
+          
+            function makeBig() { 
+                 myVideo.width = 750; 
+                 myVideo.height = 400;
+            } 
+          
+            function makeSmall() { 
+                 myVideo.width = 320; 
+                 myVideo.height = 200;
+            } 
+          
+            function makeNormal() { 
+                myVideo.width = 600; 
+                myVideo.height = 340;
+            } 
+
+            var player1 = document.getElementById('my-video');
+
+            //$('iframe').click(function playPause () {
+                //myVideo.pauseVideo();
+            //})
+          </script> 
+        </div>  
+    </div>
+</body>
+</html>

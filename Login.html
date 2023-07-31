@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="Login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <nav>
+        <p>Legend Swim School</p>
+        <ul>
+            <li><a href="Scrolling Swiping.html">Home</a></li>
+            <li><a href="#">Our Styles</a>
+                <ul>
+                    <li><a href="Freestyle.html">Freestyle</a></li>
+                    <li><a href="#">Backstroke</a></li>
+                    <li><a href="#">Breaststroke</a></li>
+                </ul>
+            </li>
+            <li><a href='Swimming Coaches.html'>Coaches</a></li>
+            <li><a href="How to Swim.html">How to Swim</a></li>
+            <li><a href="TimeWorldClock.html">Timer Clock</a></li>
+            <li><a href="Socials2.html">Socials</a></li>
+            <li><a href='Login.html'>Login</a></li>
+        </ul>
+    </nav>
+    <div class="wrapper" id="error">
+        <form action='' method="get" id="form">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" id="name" name="name" type="text" placeholder="Username" required>
+                <i class="bx bxs-user"></i>
+            </div>
+            <div class="input-box">
+                <input type="password" id="password" name="password" type="password"
+                placeholder="Password" required>
+                <i class="bx bxs-lock-alt"></i>
+            </div>
+
+            <div class="remember-forgot">
+                <label><input type="checkbox">Remember me</label>
+                <a href="#">Forgot password?</a>
+            </div>
+
+            <button type="submit" class="btn" id="zeButton" onclick="checkPassword()">Login</button>
+
+            <div class="register-link">
+                <p>Don't have an account?
+                <a href="#">Register</a></p>
+            </div>
+        </form>
+    </div>
+</body>
+<script>
+
+    function checkPassword(){
+        var name = document.getElementById('name').value;
+        var password = document.getElementById('password').value;
+
+        if(name === "TandrewAte" && password === "BugattiChiron"){
+            alert('Correct Password!'); 
+            window.open("https://www.youtube.com/watch?v=1Cgm8rztH7A");
+            return;
+        } else {
+            alert('Wrong Password!');
+            return false;
+        }
+    }
+
+    var name = document.getElementById('name')
+    var password = document.getElementById('password')
+    const form = document.getElementById('form')
+    const errorElement = document.getElementById('error')
+
+    form.addEventListener('submit', (e) => {
+    let messages = []
+    if (name.value === '' || name.value == null) {
+        messages.push('Name is required')
+    }
+
+    if (password.value.length <= 6) {
+        messages.push('Password must be longer than 6 characters')
+    }
+
+    if (password.value.length >= 20) {
+        messages.push('Password must be less than 20 characters')
+    }
+
+    if (password.value === 'password') {
+        messages.push('Password cannot be password')
+    }
+
+    if (messages.length > 0) {
+        e.preventDefault()
+        errorElement.innerText = messages.join(', ')
+    }
+    })
+    
+    //The Scripts below is a function that shouldve worked with the code above but doesnt for sum reason//
+
+    //const form = document.getElementById('form')
+    //const errorElement = document.getElementById('error')
+
+    //form.addEventListener('submit', (e) => {
+    //let messages = []
+    //if (name.value === '' || name.value == null) {
+        //messages.push('Name is required')
+    //}
+
+    //if (password.value.length <= 6) {
+        //messages.push('Password must be longer than 6 characters')
+    //}
+
+    //if (password.value.length >= 20) {
+        //messages.push('Password must be less than 20 characters')
+    //}
+
+    //if (password.value === 'password') {
+        //messages.push('Password cannot be password')
+    //}
+
+    //if (messages.length > 0) {
+        //e.preventDefault()
+        //errorElement.innerText = messages.join(', ')
+    //}
+
+    //function op(){
+        //password=document.getElementById("password").value;
+            //if(password==="BugattiChiron")
+            //window.location="https://www.youtube.com/watch?v=UZYPbyVGRZE";
+        
+    
+            //else{
+                //alert("invaild information")
+            //}
+    //} 
+    
+    //}) 
+</script>
+</html>
